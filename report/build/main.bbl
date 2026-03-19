@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{Regele2023}
+Regele, J.~D., Ouellet, F., and Harrison, A.~K., \enquote{A hydride model for
+  solid and liquid cerium ejecta particles,} Tech. Rep. LA-UR-23-30817, Los
+  Alamos National Laboratory, Sept. 2023, Approved for public release;
+  distribution is unlimited.
+
+\bibitem{Sarussi1993}
+Sarussi, D., Jacob, I., Bloch, J., Shamir, N., and Mintz, M.~H., \enquote{The
+  kinetics and mechanism of cerium hydride formation,} {\em Journal of Alloys
+  and Compounds\/}, Vol.~191, 1993, pp.~91--99.
+
+\end{thebibliography}
