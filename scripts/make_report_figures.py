@@ -17,6 +17,17 @@ from cerium_hydride import (
 )
 
 matplotlib.use("Agg")
+matplotlib.rcParams.update(
+    {
+        # Match the LaTeX document typography so the figures feel native to the
+        # report rather than imported from a separate plotting style.
+        "text.usetex": True,
+        "font.family": "serif",
+        "font.serif": ["Computer Modern Roman"],
+        "mathtext.fontset": "cm",
+        "axes.unicode_minus": False,
+    }
+)
 
 
 OUTPUT_DIR = Path("report/figures")
@@ -36,8 +47,10 @@ RHO_CE_KG_M3 = 6680.0
 # ---------------------------------------------------------------------------
 P_TOTAL_ATM = 1.0
 P_TOTAL_PA = P_TOTAL_ATM * ONE_ATM
-T_VALUES_K = np.linspace(1100.0, 1800.0, 71)
-Y_VALUES = np.linspace(1.0e-4, 1.0, 101)
+# Use a denser sweep for the final figures so category boundaries are resolved
+# more cleanly and the maps do not show obvious stair-stepping.
+T_VALUES_K = np.linspace(1100.0, 1800.0, 151)
+Y_VALUES = np.linspace(1.0e-4, 1.0, 301)
 PARTICLE_DIAMETERS_UM = [10.0, 50.0, 100.0]
 PRESSURE_MAPS_ATM = [0.25, 1.0, 5.0]
 
@@ -96,7 +109,7 @@ def save_limitation_maps_by_size() -> None:
                 P_total_Pa=P_TOTAL_PA,
             )
         )
-        panel_titles.append(f"d = {diameter_um:.0f} um")
+        panel_titles.append(rf"$d = {diameter_um:.0f}\,\mu\mathrm{{m}}$")
 
     fig, _ = plot_limitation_maps_grid(
         limitation_maps,
@@ -119,7 +132,7 @@ def save_limitation_maps_by_pressure() -> None:
                 P_total_Pa=pressure_atm * ONE_ATM,
             )
         )
-        panel_titles.append(f"P = {pressure_atm:.2f} atm")
+        panel_titles.append(rf"$P = {pressure_atm:.2f}\,\mathrm{{atm}}$")
 
     fig, _ = plot_limitation_maps_grid(
         limitation_maps,

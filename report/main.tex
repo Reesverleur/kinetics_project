@@ -32,56 +32,51 @@ exposed to an \ce{H2}/Ar atmosphere remains governed by the same limiting
 mechanism as the hydrogen concentration is reduced. This question is motivated
 by a practical experimental need: hydrogen diluted in argon would be
 substantially safer to use than pure hydrogen, but the resulting data are only
-mechanistically useful if dilution does not fundamentally change the controlling
+useful if dilution does not fundamentally change the controlling
 physics. A quasi-steady spherical model is developed in which hydrogen uptake is
 limited by three serial processes: gas-phase transport through \ce{H2}/Ar,
 transport through a hydride shell, and interfacial reaction at the
 Ce/\ce{CeH2} front. The model is used to map the dominant bottleneck as a
 function of temperature, total pressure, hydrogen mole fraction, and particle
 size. Over the range examined here, shell diffusion is often the dominant
-transport resistance, kinetics becomes increasingly important at higher
-temperature and pressure, and gas-phase diffusion becomes more relevant as total
-pressure decreases. These results suggest that hydrogen dilution does not merely
-reduce the overall hydrogen availability; it can also shift the balance among
-gas transport, shell transport, and kinetics. Consequently, the use of dilute
-\ce{H2}/Ar mixtures in future experiments is most defensible when the operating
-conditions remain within the same limiting regime as the pure-hydrogen case of
-interest.
+transport resistance and kinetics becomes increasingly important at higher
+temperature and pressure. Gas-phase diffusion seems to not be a factor except for 
+extremely low concentrations. These results suggest that hydrogen dilution does 
+not merely reduce the overall hydrogen availability; but can also shift the
+limiting behavior. Consequently, the use of dilute \ce{H2}/Ar mixtures in future 
+experiments is most defensible when the operating conditions remain within the same 
+limiting regime as the pure-hydrogen case of interest.
 \end{abstract}
 
 \section{Introduction}
 
-Cerium hydriding is governed by coupled transport and reaction processes. A
+The hydriding reaction of cerium is governed by coupled transport and reaction processes. A
 hydrogen molecule must first reach the particle through the surrounding gas,
-then traverse any hydride layer that has already formed, and finally react at
-the moving Ce/\ce{CeH2} interface. The relative importance of these steps
-determines both the interpretation of measured behavior and the extent to which
+then diffuse through any hydride layer that has already formed, and finally react at
+the Ce/\ce{CeH2} interface. The relative rates of these steps
+determines the limiting behavior and define the extent to which
 laboratory conditions can be varied without changing the underlying physics.
 
-The original proposal for this study focused on a characteristic hydriding time
+The original proposal for this project focused on a characteristic hydriding time
 for a hot liquid cerium droplet and asked whether the process was controlled
-primarily by gas-phase transport or by interfacial reaction. As the modeling
-effort developed, two issues became clear. First, a defensible time-to-conversion
-prediction would require thermal feedback from the exothermic reaction, since
-temperature changes would alter both transport properties and the kinetics law.
+primarily by gas-phase transport or by interfacial reaction. As work on the project progressed, two major difficulties motivated a change of focus. First, a defensible "characteristic hydriding time" prediction would require a fully coupled model for heat transfer back to the surface.
 Second, once a hydride layer is included, diffusion through that layer becomes a
 separate candidate bottleneck and cannot be folded into a generic
-``transport-limited'' category. The present report therefore addresses a refined
-question: under fixed thermodynamic conditions, is cerium hydriding controlled
+``transport-limited'' category. These are combined with the inability to find an accurate kinetic model for the hydriding reaction of molten cerium. The present report therefore addresses a related
+question: \textbf{\textit{under fixed thermodynamic conditions, is cerium hydriding controlled
 primarily by gas-phase diffusion, shell diffusion, or interfacial kinetics, and
-how does that classification change as hydrogen is diluted with argon?
+how does that classification change as hydrogen is diluted with argon?}}
 
-This refinement is not merely a matter of modeling convenience. In planned
+This refinement is mostly a matter of modeling convenience. In planned
 experimental work, using hydrogen diluted in argon would offer a substantial
-safety advantage relative to pure hydrogen. However, diluted mixtures are only
-scientifically useful if they probe the same limiting mechanism as the
+safety advantage relative to pure hydrogen. However, diluting the mixture risks changing the limiting mechanism as compared to the
 conditions of real interest. If dilution leaves the controlling regime
 unchanged, then reduced-\ce{H2} experiments may still provide mechanistically
 relevant data. If dilution shifts the system from shell-diffusion control to
 gas-diffusion control, or from transport control to kinetic control, then the
 results would have to be interpreted much more cautiously.
 
-The objective of this report is therefore to quantify how the dominant
+The objective of this project is therefore to quantify how the dominant
 bottleneck depends on hydrogen mole fraction, total pressure, temperature, and
 particle size. The model is intentionally quasi-steady and isothermal. It is
 not intended to predict a full transient hydriding history; rather, it is meant
@@ -89,16 +84,15 @@ to identify the conditions under which hydrogen dilution is likely to preserve
 or alter the controlling mechanism. Within that framework, the shell-diffusion
 expression is taken from the reduced hydride-layer model of Regele
 et al.\cite{Regele2023} and the interfacial kinetics term is taken from
-Sarussi et al.\cite{Sarussi1993}
+Sarussi et al.\cite{Sarussi1993} despite it's lack of applicability to molten cerium.
 
 \section{Model Formulation}
 
 \subsection{Physical picture}
 
 The system is represented as a single spherical cerium particle of core radius
-$a$ surrounded by an \ce{H2}/Ar gas mixture. The particle outer radius is $b$,
-and in the baseline calculations used here the hydride shell thickness is
-prescribed so that $b = a + \delta$. At a given operating point, hydrogen
+$a$ surrounded by a layer of cerium hydride of thickness $\delta$, this is surronded in turn by a \ce{H2}/Ar gas mixture.
+The radius of the solid phase is defined as $b$ so that $b = a + \delta$. At a given operating point, hydrogen
 uptake is modeled as a sequence of three serial steps:
 \begin{enumerate}
   \item diffusion through the surrounding gas from the far field to the outer
@@ -148,7 +142,7 @@ Regele et al.\cite{Regele2023} Written this way, the shell-diffusion term can
 be coupled transparently to the gas-transport resistance and the interfacial
 kinetics term.
 
-The interfacial rate is written in terms of a front speed law,
+The interfacial hydrogen consumption rate is written in terms of a front speed law,
 \begin{equation}
 \dot{n}_{k} =
 4 \pi a^2 \left(\frac{\rho_{\mathrm{Ce}}}{M_{\mathrm{Ce}}}\right)
@@ -174,8 +168,7 @@ one-process capacities:
 The reciprocals of these capacities are interpreted as resistance-like
 quantities. The largest resistance share identifies the dominant bottleneck.
 This construction makes it possible to distinguish explicitly among gas
-diffusion, shell diffusion, and kinetics rather than grouping them into a
-single undifferentiated transport limitation.
+diffusion, shell diffusion, and kinetics to ensure that any reduced hydrogen experiments remain in the same limiting regime
 
 \section{Baseline Conditions}
 
@@ -210,8 +203,7 @@ competition over most of the map is between shell diffusion and kinetics.
 Second, particle size has a relatively modest effect on the overall topology of
 the map for the baseline shell parameters used here. Gas-phase diffusion
 appears only in a narrow low-\ce{H2} region, which indicates that under many
-conditions the external gas supply is faster than transport through the shell.
-
+conditions the external gas supply is faster than transport through the shell. Note that above 1690 K \ce{CeH2} melts and consistent with Regele et al. \cite{Regele2023} we increase the diffusion coefficient by an order of magnitude, this results in the abrupt change at that temperature.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{limitation_maps_by_size.png}
@@ -271,9 +263,9 @@ condition.}
 Taken together, these results support a practical interpretation for future
 experimental design. If dilute \ce{H2}/Ar conditions are selected so that the
 operating point remains within the same limiting region as the higher-hydrogen
-condition of interest, then dilution may provide a safer route to
+condition of interest, then dilution may provide a safer route to performing still
 mechanistically relevant experiments. If, however, dilution shifts the system
-into a different controlling regime, then the resulting data will reflect a
+into a different controlling regime, then the resulting data may reflect a
 different balance of physics and should not be treated as a simple surrogate for
 the less diluted case.
 
@@ -284,10 +276,10 @@ isothermal, so it does not resolve thermal feedback from the reaction. The
 hydride shell is represented by an effective diffusion law rather than a
 detailed defect-transport model. The shell thickness is prescribed in the
 baseline calculations rather than determined from a fully coupled moving-boundary
-problem. Most importantly, the interfacial kinetics law is a placeholder based
+problem. Most importantly, the interfacial kinetics law is likely invalid since it is based
 on solid-cerium data.\cite{Sarussi1993} The present results should therefore be
 interpreted primarily as a mechanistic regime study rather than as a predictive
-model of absolute hydriding rates.
+model of absolute hydriding rates. If a more accurate liquid hydriding kinetic mechanism can be found, replacing the existing model will be relatively trivial and the resulting predictions will be much more accurate.
 
 \section{Conclusions}
 
@@ -300,8 +292,8 @@ dominant transport resistance for the baseline conditions examined, but kinetics
 can become controlling at sufficiently high temperature and pressure, while
 gas-phase diffusion becomes more relevant as total pressure decreases. The
 practical implication is that dilute hydrogen experiments may still be useful
-for future research, but only when the experimental conditions are chosen so
-that the same limiting regime is preserved.
+for future research, but only if the experimental conditions are chosen so
+that the same limiting regime is preserved and the results are interpreted carefully.
 
 \bibliographystyle{aiaa}
 \bibliography{references}

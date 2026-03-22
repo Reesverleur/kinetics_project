@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  18 MAR 2026 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 MAR 2026 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,7 +685,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 57.
+(Font)              <10.95> on input line 56.
 
 
 [1
@@ -697,36 +697,37 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
 cal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 25/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-93.
+86.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-
-[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
-cal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<figures/limitation_maps_by_size.png, id=93, 1076.3412pt x 291.9708pt>
+<figures/limitation_maps_by_size.png, id=83, 1061.566pt x 288.5982pt>
 File: figures/limitation_maps_by_size.png Graphic file (type png)
 <use figures/limitation_maps_by_size.png>
 Package pdftex.def Info: figures/limitation_maps_by_size.png  used on input lin
-e 217.
-(pdftex.def)             Requested size: 469.75502pt x 127.4295pt.
-<figures/limitation_maps_by_pressure.png, id=96, 1076.3412pt x 291.9708pt>
+e 209.
+(pdftex.def)             Requested size: 469.75502pt x 127.7058pt.
+
+
+[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
+cal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+<figures/limitation_maps_by_pressure.png, id=98, 1061.566pt x 288.5982pt>
 File: figures/limitation_maps_by_pressure.png Graphic file (type png)
 <use figures/limitation_maps_by_pressure.png>
 Package pdftex.def Info: figures/limitation_maps_by_pressure.png  used on input
- line 238.
-(pdftex.def)             Requested size: 469.75502pt x 127.4295pt.
+ line 230.
+(pdftex.def)             Requested size: 469.75502pt x 127.7058pt.
 
 
 [4 <./figures/limitation_maps_by_size.png> <./figures/limitation_maps_by_pressu
 re.png>]
-<figures/radial_profiles_by_yinf.png, id=107, 860.013pt x 321.8424pt>
+<figures/radial_profiles_by_yinf.png, id=109, 859.8524pt x 325.0544pt>
 File: figures/radial_profiles_by_yinf.png Graphic file (type png)
 <use figures/radial_profiles_by_yinf.png>
 Package pdftex.def Info: figures/radial_profiles_by_yinf.png  used on input lin
-e 262.
-(pdftex.def)             Requested size: 469.75502pt x 175.79596pt.
+e 254.
+(pdftex.def)             Requested size: 469.75502pt x 177.58511pt.
 
 
 [5 <./figures/radial_profiles_by_yinf.png>] (build/main.bbl)
@@ -740,30 +741,31 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CD38FD42574F8BDC357220FB18F58348;1480.
  ) 
 Here is how much of TeX's memory you used:
- 18255 strings out of 473190
- 353315 string characters out of 5715801
+ 18276 strings out of 473190
+ 353595 string characters out of 5715801
  773316 words of memory out of 5000000
- 41086 multiletter control sequences out of 15000+600000
- 635469 words of font info for 164 fonts, out of 8000000 for 9000
+ 41090 multiletter control sequences out of 15000+600000
+ 643606 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,80p,1001b,1034s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,80p,1001b,1059s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/tex
-mf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fo
-nts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/p
-ublic/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lm
-r12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/tex
-live/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/te
-xmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fon
-ts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/p
-ublic/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/l
-msy8.pfb>
-Output written on build/main.pdf (6 pages, 630835 bytes).
+e/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2025/te
+xmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
+/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/
+lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/
+lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+
+Output written on build/main.pdf (6 pages, 755749 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 500000)
- 45152 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49248 words of extra memory for PDF output out of 51595 (max. 10000000)
 

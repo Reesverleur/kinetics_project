@@ -22,7 +22,9 @@ def _ensure_parent(path: str | Path | None) -> None:
 def _limitation_colormap():
     from matplotlib.colors import BoundaryNorm, ListedColormap
 
-    cmap = ListedColormap(["tab:red", "tab:orange", "tab:blue"])
+    # Use a fixed palette with stronger contrast and a less "default Matplotlib"
+    # appearance for the final report figures.
+    cmap = ListedColormap(["#3F88C5", "#D9A441", "#9C4A36"])
     norm = BoundaryNorm([-0.5, 0.5, 1.5, 2.5], cmap.N)
     return cmap, norm
 
@@ -56,7 +58,15 @@ def plot_limitation_map(
     else:
         fig = ax.figure
 
-    mesh = ax.pcolormesh(y_values, T_values_K, limiting_process_code, shading="nearest", cmap=cmap, norm=norm)
+    mesh = ax.contourf(
+        y_values,
+        T_values_K,
+        limiting_process_code,
+        levels=[-0.5, 0.5, 1.5, 2.5],
+        cmap=cmap,
+        norm=norm,
+        antialiased=False,
+    )
     ax.set_xlabel("Far-field H2 mole fraction")
     ax.set_ylabel("Temperature [K]")
     ax.set_xlim(float(np.min(y_values)), float(np.max(y_values)))
@@ -396,6 +406,6 @@ def plot_regional_radial_profiles(
     return fig, axes
 
 
-def save_figure(fig, output_path: str | Path, dpi: int = 300) -> None:
+def save_figure(fig, output_path: str | Path, dpi: int = 450) -> None:
     _ensure_parent(output_path)
     fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
