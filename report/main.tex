@@ -10,6 +10,8 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{titlesec}
+\usepackage{enumitem}
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
 \usepackage[numbers,sort&compress]{natbib}
@@ -18,34 +20,40 @@
 \graphicspath{{figures/}}
 \sisetup{detect-all}
 \DeclareSIUnit{\atm}{atm}
+\setlength{\textfloatsep}{10pt plus 2pt minus 3pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{0pt}
+\setlength{\abovedisplayskip}{7pt plus 2pt minus 3pt}
+\setlength{\belowdisplayskip}{7pt plus 2pt minus 3pt}
+\setlength{\abovedisplayshortskip}{5pt plus 2pt minus 2pt}
+\setlength{\belowdisplayshortskip}{5pt plus 2pt minus 2pt}
+\titlespacing*{\section}{0pt}{1.6ex plus 0.4ex minus 0.2ex}{0.7ex plus 0.2ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus 0.3ex minus 0.2ex}{0.5ex plus 0.2ex}
+\setlist{nosep,leftmargin=1.6em}
 
 \title{Effect of Hydrogen Dilution on the Limiting Mechanism for Cerium Hydriding}
-\author{R. Verleur}
-\date{\today}
+\author{R. Verleur\thanks{Code availability: \url{https://github.com/Reesverleur/kinetics_project}.}}
+\date{}
 
 \begin{document}
 \maketitle
+\vspace{-1.2em}
 
 \begin{abstract}
-The question examined here is whether hydride formation on a cerium particle
-exposed to an \ce{H2}/Ar atmosphere remains governed by the same limiting
-mechanism as the hydrogen concentration is reduced. This question is motivated
-by a practical experimental need: hydrogen diluted in argon would be
-substantially safer to use than pure hydrogen, but the resulting data are only
-useful if dilution does not fundamentally change the controlling
-physics. A quasi-steady spherical model is developed in which hydrogen uptake is
-limited by three serial processes: gas-phase transport through \ce{H2}/Ar,
-transport through a hydride shell, and interfacial reaction at the
-Ce/\ce{CeH2} front. The model is used to map the dominant bottleneck as a
-function of temperature, total pressure, hydrogen mole fraction, and particle
-size. Over the range examined here, shell diffusion is often the dominant
-transport resistance and kinetics becomes increasingly important at higher
-temperature and pressure. Gas-phase diffusion seems to not be a factor except for 
-extremely low concentrations. These results suggest that hydrogen dilution does 
-not merely reduce the overall hydrogen availability; but can also shift the
-limiting behavior. Consequently, the use of dilute \ce{H2}/Ar mixtures in future 
-experiments is most defensible when the operating conditions remain within the same 
-limiting regime as the pure-hydrogen case of interest.
+This work examines whether diluting hydrogen with argon changes the limiting
+mechanism for cerium hydriding. A quasi-steady isothermal spherical model is
+used in which hydrogen uptake is controlled by three serial processes:
+gas-phase transport through \ce{H2}/Ar, diffusion through a hydride shell, and
+interfacial reaction at the Ce/\ce{CeH2} front. The model is used to classify
+the dominant bottleneck over temperature, total pressure, hydrogen mole
+fraction, and particle size. For the baseline conditions studied here, shell
+diffusion is commonly the dominant transport resistance, kinetics becomes more
+important as temperature and pressure increase, and gas-phase diffusion matters
+mainly at very low hydrogen content. Dilute \ce{H2}/Ar mixtures are therefore
+most useful when the operating point remains in the same limiting regime as the
+higher-hydrogen condition of interest.
 \end{abstract}
 
 \section{Introduction}
@@ -175,8 +183,9 @@ diffusion, shell diffusion, and kinetics to ensure that any reduced hydrogen exp
 Table~\ref{tab:baseline} lists the baseline values used to generate the
 preliminary maps and profile comparisons shown below.
 
-\begin{table}[H]
+\begin{table}[t]
 \centering
+\small
 \caption{Baseline parameters used in the quasi-steady calculations.}
 \label{tab:baseline}
 \begin{tabular}{ll}
@@ -204,9 +213,9 @@ Second, particle size has a relatively modest effect on the overall topology of
 the map for the baseline shell parameters used here. Gas-phase diffusion
 appears only in a narrow low-\ce{H2} region, which indicates that under many
 conditions the external gas supply is faster than transport through the shell. Note that above 1690 K \ce{CeH2} melts and consistent with Regele et al. \cite{Regele2023} we increase the diffusion coefficient by an order of magnitude, this results in the abrupt change at that temperature.
-\begin{figure}[H]
+\begin{figure}[tbp]
 \centering
-\includegraphics[width=\textwidth]{limitation_maps_by_size.png}
+\includegraphics[width=0.96\textwidth]{limitation_maps_by_size.png}
 \caption{Dominant limiting mechanism as a function of temperature and far-field
 hydrogen mole fraction for three particle diameters at \SI{1}{\atm}. The color
 bar identifies whether the controlling resistance is gas diffusion, shell
@@ -225,9 +234,9 @@ pressure. A dilute mixture may still be mechanistically useful, but only if the
 chosen operating point remains in the same regime as the higher-hydrogen case of
 interest.
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 \centering
-\includegraphics[width=\textwidth]{limitation_maps_by_pressure.png}
+\includegraphics[width=0.96\textwidth]{limitation_maps_by_pressure.png}
 \caption{Effect of total pressure on the dominant limiting mechanism for a
 \SI{50}{\micro\meter} particle. Lower total pressure broadens the region in
 which transport, particularly shell diffusion and gas diffusion, is important,
@@ -249,9 +258,9 @@ dominant transport contribution. Increasing the far-field hydrogen mole fraction
 raises both the shell-side and gas-side levels, but it does not eliminate the
 shell drop.
 
-\begin{figure}[H]
+\begin{figure}[tbp]
 \centering
-\includegraphics[width=\textwidth]{radial_profiles_by_yinf.png}
+\includegraphics[width=0.95\textwidth]{radial_profiles_by_yinf.png}
 \caption{Quasi-steady hydrogen profiles in the metal, shell, and gas regions
 for three far-field hydrogen mole fractions at \SI{1450}{\kelvin} and
 \SI{1}{\atm}. Solid lines denote the gas-phase hydrogen mole fraction and

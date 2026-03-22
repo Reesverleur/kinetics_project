@@ -22,9 +22,9 @@ def _ensure_parent(path: str | Path | None) -> None:
 def _limitation_colormap():
     from matplotlib.colors import BoundaryNorm, ListedColormap
 
-    # Use a fixed palette with stronger contrast and a less "default Matplotlib"
-    # appearance for the final report figures.
-    cmap = ListedColormap(["#3F88C5", "#D9A441", "#9C4A36"])
+    # Okabe-Ito style colors keep the categories distinguishable for many
+    # color-vision deficiencies while remaining visually distinct in print.
+    cmap = ListedColormap(["#0072B2", "#E69F00", "#D55E00"])
     norm = BoundaryNorm([-0.5, 0.5, 1.5, 2.5], cmap.N)
     return cmap, norm
 
@@ -67,6 +67,16 @@ def plot_limitation_map(
         norm=norm,
         antialiased=False,
     )
+    # Draw explicit category boundaries so the maps remain interpretable even if
+    # color differences are harder to distinguish on screen or in print.
+    ax.contour(
+        y_values,
+        T_values_K,
+        limiting_process_code,
+        levels=[0.5, 1.5],
+        colors="k",
+        linewidths=0.45,
+    )
     ax.set_xlabel("Far-field H2 mole fraction")
     ax.set_ylabel("Temperature [K]")
     ax.set_xlim(float(np.min(y_values)), float(np.max(y_values)))
@@ -106,7 +116,7 @@ def plot_limitation_maps_grid(
     n_maps = len(limitation_maps)
     ncols = max(1, min(ncols, n_maps))
     nrows = int(np.ceil(n_maps / ncols))
-    fig, axes = plt.subplots(nrows, ncols, figsize=(4.8 * ncols + 0.9, 3.9 * nrows), squeeze=False)
+    fig, axes = plt.subplots(nrows, ncols, figsize=(4.8 * ncols + 0.9, 3.35 * nrows), squeeze=False)
     axes_flat = axes.ravel()
 
     for index, (limitation_map, panel_title) in enumerate(zip(limitation_maps, panel_titles)):
@@ -334,12 +344,12 @@ def plot_regional_radial_profiles(
         raise ValueError("At least one profile is required.")
 
     if colors is None:
-        colors = plt.rcParams["axes.prop_cycle"].by_key()["color"][: len(profiles)]
+        colors = ["#000000", "#0072B2", "#D55E00", "#009E73", "#CC79A7"][: len(profiles)]
 
     fig, axes = plt.subplots(
         1,
         3,
-        figsize=(12.0, 4.6),
+        figsize=(12.0, 3.95),
         sharey=True,
         gridspec_kw={"width_ratios": [1.2, 1.4, 3.0]},
     )
@@ -396,7 +406,7 @@ def plot_regional_radial_profiles(
     shell_ax.set_xlabel("Shell radius [um]")
     gas_ax.set_xlabel("Gas radius [um] (log)")
     metal_ax.set_ylabel("Hydrogen mole fraction / effective shell variable")
-    gas_ax.legend(handles=legend_handles, title="Far-field $y_{H_2}$", loc="upper right")
+    gas_ax.legend(handles=legend_handles, title="Far-field $y_{H_2}$", loc="upper right", fontsize=9)
 
     if title is not None:
         fig.suptitle(title)

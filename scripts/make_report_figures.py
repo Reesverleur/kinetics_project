@@ -26,6 +26,7 @@ matplotlib.rcParams.update(
         "font.serif": ["Computer Modern Roman"],
         "mathtext.fontset": "cm",
         "axes.unicode_minus": False,
+        "axes.prop_cycle": matplotlib.cycler(color=["#000000", "#0072B2", "#D55E00", "#009E73", "#CC79A7"]),
     }
 )
 
