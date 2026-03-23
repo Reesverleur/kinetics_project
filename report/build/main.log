@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 MAR 2026 22:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  23 MAR 2026 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,13 +741,13 @@ ist/fonts/enc/dvips/lm/lm-mathex.enc}]
 File: figures/limitation_maps_by_size.png Graphic file (type png)
 <use figures/limitation_maps_by_size.png>
 Package pdftex.def Info: figures/limitation_maps_by_size.png  used on input lin
-e 218.
+e 231.
 (pdftex.def)             Requested size: 450.96797pt x 108.74818pt.
 <figures/limitation_maps_by_pressure.png, id=93, 1061.566pt x 255.9964pt>
 File: figures/limitation_maps_by_pressure.png Graphic file (type png)
 <use figures/limitation_maps_by_pressure.png>
 Package pdftex.def Info: figures/limitation_maps_by_pressure.png  used on input
- line 239.
+ line 252.
 (pdftex.def)             Requested size: 450.96797pt x 108.74818pt.
 
 
@@ -756,7 +756,7 @@ Package pdftex.def Info: figures/limitation_maps_by_pressure.png  used on input
 File: figures/radial_profiles_by_yinf.png Graphic file (type png)
 <use figures/radial_profiles_by_yinf.png>
 Package pdftex.def Info: figures/radial_profiles_by_yinf.png  used on input lin
-e 263.
+e 276.
 (pdftex.def)             Requested size: 446.26582pt x 144.36346pt.
 
 
@@ -772,11 +772,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CD38FD42574F8BDC357220FB18F58348;1480.
  ) 
 Here is how much of TeX's memory you used:
- 18993 strings out of 473190
- 364624 string characters out of 5715801
- 789204 words of memory out of 5000000
+ 18991 strings out of 473190
+ 364610 string characters out of 5715801
+ 789201 words of memory out of 5000000
  41773 multiletter control sequences out of 15000+600000
- 652711 words of font info for 193 fonts, out of 8000000 for 9000
+ 652690 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,80p,1001b,1038s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
@@ -796,7 +796,7 @@ r/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist
 /fonts/type1/public/lm/lmtt9.pfb>
-Output written on build/main.pdf (5 pages, 847320 bytes).
+Output written on build/main.pdf (5 pages, 847136 bytes).
 PDF statistics:
  230 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams
